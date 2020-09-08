@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="/static/main.css/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Covid19-Meter</title>
+</head>
+<style>
+
+.footers {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+   font-size:15px;
+}
+
+</style>
+<body>
+    <nav class="navbar navbar-light justify-content-center d-flex bg-dark text-dark">
+        <a class="navbar-brand" href="/">Covid19-Meter</a>
+        <a class="navbar-brand" href="/guide">Guide</a><br>
+    </nav>
+    <p style="text-align:center;color:white">If you have any problem regarding the results please check the guide.</p>
+        <div class="container">
+            <h1 style="text-align:center;color:White;">Enter the details of the District</h1>
+            <div class="form-div" style="width: 40%; margin: 20px auto;">
+                <form action="/analysis" method="POST">
+                    <div class="form-group">
+                    <input class="form-control" type="text" placeholder="State" name="state" id="state">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="City" name="city" id="city">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-lg btn-success btn-block">Get Details</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+<div class="footers">
+    <h>Developers:</h><br>
+    Yash Soni &nbsp;<a href="https://www.linkedin.com/in/yash-soni-5b50a41aa/" target="_blank" class="fa fa-linkedin" style="color:blue"></a>&nbsp;<a href="https://www.instagram.com/soniyash5000/" target="_blank" class="fa fa-instagram" style="color:red"></a>
+    <br>
+    Abhinav Gangrade &nbsp;<a href="https://www.linkedin.com/in/abhinav-gangrade-952393168/" target="_blank" class="fa fa-linkedin" style="color:blue"></a>&nbsp;<a href="https://www.instagram.com/gangrade_abhinav/" target="_blank" class="fa fa-instagram" style="color:red"></a>
+</div>
+</body>
+</html>

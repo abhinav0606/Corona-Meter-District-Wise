@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="/static/main.css/">
+    <title>Covid19-Meter</title>
+</head>
+<script language="JavaScript" >
+</script>
+<body>
+    <nav class="navbar navbar-light justify-content-center d-flex bg-dark">
+        <a class="navbar-brand" href="/">Covid19-Meter</a>
+    </nav>
+    <br>
+    <div style="text-align:center">
+    <h style="text-align:center;font-size:30px;color:White">Covid Analysis For {{City}}</h>
+    </div>
+        <div class="container text-center">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="count text-white col-sm-6 col-12 red bg-danger col-md-3">Confirmed<br>{{Confirmed}} (+{{new_confirmed}})</div>
+                <div class="count text-white col-sm-6 col-12 blue col-md-3">Active<br>{{Active}}</div>
+                <div class="count text-white col-sm-6 col-12 green col-md-3">Recovered<br>{{Recovered}} (+{{new_recovered}})</div>
+                <div class="count text-white col-sm-6 col-12 dark col-md-3">Deaths<br>{{Deaths}} (+{{new_deaths}})</div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <h2 style="color:white">Graphical Analysis</h2>
+        <br>
+        <br>
+        <div class="mb-5">
+            <img width="320" height="320" src="/static/{{Pic}}.png/" >
+        </div>
+    </div>    
+    <footer class="d-flex justify-content-center text-white fixed-bottom">
+        Thanks for using our Web App.
+    </footer>
+</body>
+</html>

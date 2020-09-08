@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7">
+    <title>Covid19-Meter</title>
+</head>
+<body style="text-align:center;background-color:silver";>
+   <nav class="navbar navbar-light justify-content-center d-flex bg-dark">
+        <a class="navbar-brand" href="/">Covid19-Meter</a>
+    </nav>
+<h1 style="font-size:40px;">This Guide is for users who have problems regarding the result of their search</h1>
+<h1>Sometimes the problem may arise due to the spelling mistakes,so please check that.</h1>
+   <br>
+{% for i in range(len)%}
+<h1 style="font-size:50px;color:Blue">{{i+1}}){{l[i]}}</h1>
+{%for j in op[i]%}
+<h2 style="font-size:40px">{{j}}</h2>
+{%endfor%}
+   <br>
+{%endfor%}
+<br>
+</body>
+</html>
